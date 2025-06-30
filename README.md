@@ -97,8 +97,8 @@ python consumer.py
 ```text
 Método: POST
 URL: http://localhost:5000/events
-Body (JSON):
 ```
+Body (JSON):
 
 ``` json 
 {
@@ -125,9 +125,10 @@ URL: http://localhost:5000/events/upcoming
 ```text
 Método: POST
 URL: http://localhost:5000/events/<event_id>/subscribe
-(Substitua <event_id> pelo ID do evento que deseja inscrever)
-Body (JSON):`
 ```
+| (Substitua <event_id> pelo ID do evento que deseja inscrever)
+
+Body (JSON):
 
 ``` json 
 {
