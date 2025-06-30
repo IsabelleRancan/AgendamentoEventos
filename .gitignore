@@ -1,0 +1,16 @@
+# Ignorar ambientes virtuais
+.venv/
+.env
+
+# Ignorar banco de dados local
+*.sqlite3
+
+# Ignorar arquivos do sistema
+__pycache__/
+*.pyc
+
+# Ignorar arquivos de configuração do VSCode (opcional)
+.vscode/
+
+# Ignorar senhas sensíveis (como de email, se você usou .env)
+email_service/.env
