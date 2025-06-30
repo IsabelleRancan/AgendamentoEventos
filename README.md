@@ -64,10 +64,10 @@ pip install -r requirements.txt
 - Preencha com suas credenciais de e-mail (usar senha de app para Gmail)
 
 ```text
-EMAIL_SENDER=seu_email@gmail.com
-EMAIL_PASSWORD=sua_senha_de_app
-SMTP_SERVER=smtp.gmail.com
-SMTP_PORT=587
+EMAIL_SENDER= "seu_email@gmail.com"
+EMAIL_PASSWORD= "sua_senha_de_app"
+SMTP_SERVER= "smtp.gmail.com"
+SMTP_PORT= "587"
 ```
 
 ---
@@ -80,7 +80,7 @@ Em um terminal:
 cd event_service
 python app.py
 ```
-API rodando em: http://localhost:5000
+| API rodando em: http://localhost:5000
 
 ### 2. Inicie o serviço de envio de e-mails
 Em outro terminal:
@@ -94,9 +94,11 @@ python consumer.py
 ## 🧪 Testando a Aplicação com Postman
 
 ### 1. Criar um evento
+```text
 Método: POST
 URL: http://localhost:5000/events
 Body (JSON):
+```
 
 ``` json 
 {
@@ -108,18 +110,24 @@ Body (JSON):
 ```
 
 ### 2. Listar todos os eventos
+```text
 Método: GET
 URL: http://localhost:5000/events
+```
 
 ### 3. Listar eventos futuros
+```text
 Método: GET
 URL: http://localhost:5000/events/upcoming
+```
 
 ### 4. Inscrever participante em um evento
+```text
 Método: POST
 URL: http://localhost:5000/events/<event_id>/subscribe
 (Substitua <event_id> pelo ID do evento que deseja inscrever)
-Body (JSON):
+Body (JSON):`
+```
 
 ``` json 
 {
@@ -154,4 +162,4 @@ Body (JSON):
 - Projeto desenvolvido por Isabelle Firmino Rancan — Estudante de Análise e Desenvolvimento de Sistemas – IFMS
 - Comunicação entre microsserviços feita via RabbitMQ, garantindo desacoplamento e escalabilidade
 - Envio de e-mails com confirmação personalizada contendo detalhes do evento
-- [Vídeo com exemplo de uso](https://drive.google.com/file/d/1496gNBDO5gTi0tto56tnesIvOCCazW3L/view?usp=sharing)
+- [Vídeo com exemplo de uso](https://drive.google.com/file/d/1NK5-hVFIhFfiRcnfz6bQsS2oNJax5WXE/view?usp=sharing)
